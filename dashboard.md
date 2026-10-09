@@ -10,7 +10,7 @@
 | Đèn | Hiện | 🟢 / 🟡 / 🔴 | Nguồn | Báo trước cho |
 |---|---|---|---|---|
 | **Time-to-First-Value (TTFV)** ⭐ | 5.5 ngày | 🟢 < 7 ngày · 🟡 7–14 ngày · 🔴 > 14 ngày | [TB] baseline | POC → Paid (sau 4 tuần) & NRR (sau 12T) |
-| **Pipeline Coverage (SMB/Mid-Market)** | 3.8× | 🟢 ≥ 3.5× · 🟡 2.5–3.5× · 🔴 < 2.5× | [BM] 27/08/2026 | New Bookings ARR & Sales Cycle (sau 8–12 tuần) |
+| **Pipeline Coverage (SMB/Mid-Market)** | 3.8× | 🟢 ≥ 3.5× · 🟡 2.5–3.5× · 🔴 < 2.5× | [BM] [Bessemer / Skok](https://www.forentrepreneurs.com/saas-metrics-2/) (27/08/2026) | New Bookings ARR & Sales Cycle (sau 8–12 tuần) |
 
 ---
 
@@ -18,7 +18,7 @@
 
 | Đèn | Hiện | 🟢 / 🟡 / 🔴 | Nguồn | Báo trước cho |
 |---|---|---|---|---|
-| **POC → Paid Conversion** | 52% | 🟢 ≥ 50% · 🟡 35–50% · 🔴 < 35% | [BM] 27/08/2026 | New ARR & CAC Payback (sau 1–2 quý) |
+| **POC → Paid Conversion** | 52% | 🟢 ≥ 50% · 🟡 35–50% · 🔴 < 35% | [BM] [ICONIQ GTM 2026](https://www.iconiq.com/growth/reports/state-of-go-to-market-2026) (27/08/2026) | New ARR & CAC Payback (sau 1–2 quý) |
 | **Chi phí AI Inference ÷ Doanh thu** 🤖 | 10.8% | 🟢 < 12% · 🟡 12–18% · 🔴 > 18% | [MH] suy từ Cost/Job | Gross Margin tầng Lagging (sau 1 quý) |
 | **Chi phí triển khai ÷ ACV** | 11.5% | 🟢 < 10% · 🟡 10–20% · 🔴 > 20% | [MH] suy từ CAC/PB | Gross Margin & CAC Payback (sau 2 quý) |
 | **Usage Depth (% Seats Active)** | 68% | 🟢 ≥ 65% · 🟡 40–65% · 🔴 < 40% | [TB] baseline | Annual Retention & Account Churn (sau 6–12T) |
@@ -29,8 +29,8 @@
 
 | Đèn | Hiện | 🟢 / 🟡 / 🔴 | Nguồn |
 |---|---|---|---|
-| **Gross Margin** | 76.2% | 🟢 ≥ 75% · 🟡 65–75% · 🔴 < 65% | [BM] 27/08/2026 / [MH] |
-| **CAC Payback Period** | 4.8 tháng | 🟢 < 6.0 tháng · 🟡 6.0–9.0 tháng · 🔴 > 9.0 tháng | [BM] 27/08/2026 / [MH] |
+| **Gross Margin** | 76.2% | 🟢 ≥ 75% · 🟡 65–75% · 🔴 < 65% | [BM] [Benchmarkit 2025](https://www.benchmarkit.ai/2025benchmarks) (27/08/2026) / [MH] |
+| **CAC Payback Period** | 4.8 tháng | 🟢 < 6.0 tháng · 🟡 6.0–9.0 tháng · 🔴 > 9.0 tháng | [BM] [Bessemer Atlas](https://www.bvp.com/atlas/scaling-to-100-million) (27/08/2026) / [MH] |
 
 ---
 

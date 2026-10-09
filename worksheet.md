@@ -7,7 +7,7 @@ Họ tên: Chử Trần Phương Nam · MHV: 2A202602675 · Ngày làm: 09/10/20
 ## Trạm 1 — Loại mô hình
 
 **Câu chốt loại:**  
-Chúng tôi là **B2B** vì tiền đến từ các **Công ty Giao nhận Vận tải (Freight Forwarders) và Đại lý Hải quan (Customs Brokers)**; người dùng trực tiếp là **Nhân viên chứng từ (Documentation Ops) & Nhân viên Báo giá (Pricing Ops)** của chính doanh nghiệp đó để xử lý các bộ chứng từ vận tải (Bill of Lading, Invoice, Packing List, Tờ khai Hải quan), không có bên thứ ba trung gian sở hữu dữ liệu người dùng.
+Chúng tôi là **B2B** vì tiền đến từ các **Công ty Giao nhận Vận tải vừa và nhỏ (SMB Freight Forwarders 10–50 nhân sự) và Đại lý Khai thuê Hải quan (Customs Brokers)**; người dùng trực tiếp là **Nhân viên chứng từ (Documentation Ops) & Nhân viên Báo giá (Pricing Ops)** của chính doanh nghiệp đó để xử lý các bộ chứng từ vận tải (Bill of Lading, Invoice, Packing List, Tờ khai Hải quan ECUS5-VNACCS), không có bên thứ ba trung gian sở hữu dữ liệu người dùng.
 
 ---
 
@@ -49,15 +49,15 @@ Chúng tôi là **B2B** vì tiền đến từ các **Công ty Giao nhận Vận
 
 ## Trạm 3 — Ngưỡng
 
-| # | Đèn | 🟢 Xanh | 🟡 Vàng | 🔴 Đỏ | Nguồn | Lý do (1 câu) & Ngày kiểm tra |
+| # | Đèn | 🟢 Xanh | 🟡 Vàng | 🔴 Đỏ | Nguồn | Lý do (1 câu) & Nguồn URL kiểm tra |
 |---|---|---|---|---|---|---|
 | 1 | **Time-to-First-Value (TTFV)** ⭐ | < 7 ngày | 7–14 ngày | > 14 ngày | **[TB]** | Tự đo baseline: Sản phẩm bóc tách tài liệu nếu quá 14 ngày chưa export được file đầu tiên thì 80% khách bỏ cuộc trước khi hết hạn POC. |
-| 2 | **Pipeline Coverage** | ≥ 3.5× | 2.5×–3.5× | < 2.5× | **[TB]** / **[BM]** | Với Win Rate mục tiêu 30% ở phân khúc Forwarder vừa và nhỏ, cần pipeline tối thiểu 3.3× (đặt 3.5× để có biên an toàn). Kiểm tra benchmark B2B: 27/08/2026. |
-| 3 | **POC → Paid Conversion Rate** | ≥ 50% | 35%–50% | < 35% | **[BM]** | Benchmark ICONIQ State of GTM 2026 (kiểm tra 27/08/2026): Trung vị POC-to-paid của SaaS AI B2B đạt ~50% (tăng từ 36% năm 2025). |
+| 2 | **Pipeline Coverage** | ≥ 3.5× | 2.5×–3.5× | < 2.5× | **[TB]** / **[BM]** | Với Win Rate mục tiêu 30% ở phân khúc SMB, cần pipeline tối thiểu $1/0.30 \approx 3.3\times$ (đặt 3.5× để có biên an toàn). Nguồn: [Bessemer / Skok SaaS Metrics](https://www.forentrepreneurs.com/saas-metrics-2/) (27/08/2026). |
+| 3 | **POC → Paid Conversion Rate** | ≥ 50% | 35%–50% | < 35% | **[BM]** | Benchmark B2B AI SaaS: Trung vị POC-to-paid đạt ~50%. Nguồn: [ICONIQ State of GTM 2026](https://www.iconiq.com/growth/reports/state-of-go-to-market-2026) (kiểm tra 27/08/2026). |
 | 4 | **Chi phí AI Inference ÷ Doanh thu** 🤖 | < 12% | 12%–18% | > 18% | **[MH]** | Suy từ mô hình Day 25: Giá gói $0.40/bộ chứng từ, chi phí AI (OCR + LLM) tối đa $0.048/bộ để giữ biên COGS AI an toàn bảo vệ Gross Margin ≥75%. |
 | 5 | **Chi phí triển khai ÷ ACV** | < 10% | 10%–20% | > 20% | **[MH]** | Suy từ mô hình Day 24: Với ACV $4,800 (Mid-Market), chi phí onboarding không được vượt quá $720 (tương đương 72 giờ công) để đảm bảo Payback < 6 tháng. |
 | 6 | **Usage Depth (% Seats Active)** | ≥ 65% | 40%–65% | < 40% | **[TB]** | Baseline nội bộ: Nếu <40% nhân viên chứng từ dùng AI sau 30 ngày go-live, khách hàng sẽ hạ gói (downgrade seats) khi tái ký hợp đồng năm. |
-| 7 | **Gross Margin** | ≥ 75% | 65%–75% | < 65% | **[BM]** / **[MH]** | Target Day 24 cho SaaS B2B AI Workflow đạt 75% (neo theo benchmark Benchmarkit 2025: 77% và ICONIQ 2026: 53% AI-native, kiểm tra 27/08/2026). |
+| 7 | **Gross Margin** | ≥ 75% | 65%–75% | < 65% | **[BM]** / **[MH]** | Target Day 24 cho SaaS B2B AI Workflow đạt 75% (neo theo benchmark SaaS trung vị 77% tại [Benchmarkit SaaS 2025](https://www.benchmarkit.ai/2025benchmarks) và AI-native 53% tại [ICONIQ State of AI 2026](https://www.iconiq.com/growth/reports/state-of-ai-2026), kiểm tra 27/08/2026). |
 
 ---
 
@@ -68,7 +68,11 @@ Chúng tôi là **B2B** vì tiền đến từ các **Công ty Giao nhận Vận
 * **Đầu vào (từ Unit Economics Day 25):**
   * Giá bán trung bình (ARPU): Gói Professional $300/tháng bao gồm 750 bộ chứng từ $\rightarrow$ Đơn giá $0.40$/bộ chứng từ.
   * Mỗi bộ chứng từ tiêu chuẩn gồm: 1 Bill of Lading (1 trang), 1 Commercial Invoice (2 trang), 1 Packing List (2 trang), 1 Tờ khai hải quan (2 trang) = 7 trang tài liệu PDF.
-  * Kiến trúc AI Pipeline: OCR Vision trích xuất text/table ($0.0015$/trang $\times$ 7 = $0.0105$) + LLM Schema Mapping (Prompt + Completion: 4.000 tokens input + 1.500 tokens output qua Claude 3.5 Sonnet / GPT-4o mini: ~$0.025/lần) + Validation retry rate 15% ($0.005$) $\rightarrow$ **Cost per Job cơ sở = $0.0405$/bộ chứng từ**.
+  * Kiến trúc AI Pipeline thực tế:
+    * OCR Vision API (Google Document AI / AWS Textract @ $0.0015$/trang $\times$ 7 trang = $0.0105$/bộ) — [Google Doc AI Pricing](https://cloud.google.com/document-ai/pricing).
+    * LLM Schema Mapping (4.000 tokens input + 1.500 tokens output qua Claude 3.5 Sonnet @ $3/1M in, $15/1M out + GPT-4o-mini pre-filter $\approx \$0.0250$/lần) — [OpenAI API Pricing](https://openai.com/api/pricing/).
+    * Validation Retry & Error Handling rate 15% ($\approx \$0.0050$/lần).
+    * $\rightarrow$ **Cost per Job cơ sở = $0.0105 + \$0.0250 + \$0.0050 = \$0.0405$/bộ chứng từ**.
   * Mục tiêu Gross Margin của toàn sản phẩm $\ge 75\%$, trong đó trần ngân sách cho toàn bộ COGS AI (Inference + OCR API) là $\le 15\%$ doanh thu.
 
 * **Phép tính suy ngược:**
@@ -83,7 +87,7 @@ Chúng tôi là **B2B** vì tiền đến từ các **Công ty Giao nhận Vận
 
 * **Đầu vào (từ Mô hình tài chính Day 24):**
   * Phân khúc khách hàng mục tiêu: Freight Forwarders quy mô vừa (Mid-Market) có ACV = $4,800/năm ($400/tháng).
-  * Mục tiêu CAC Payback $\le 6$ tháng.
+  * Mục tiêu CAC Payback $\le 6$ tháng (theo chuẩn B2B SaaS tại [Bessemer Atlas](https://www.bvp.com/atlas/scaling-to-100-million)).
   * Tỷ suất Lãi gộp (Gross Margin) = $75\% \rightarrow$ Lãi gộp hàng tháng $= \$400 \times 75\% = \$300/\text{tháng}$.
   * Tổng ngân sách CAC tối đa $= \$300 \times 6 = \$1,800$.
   * Trong đó, cơ cấu chi phí CAC: Sales & Marketing chiếm $60\%$ ($\$1,080$), Chi phí Triển khai kỹ thuật & Onboarding (CS/Solutions Engineer) chiếm tối đa $40\%$ ($\$720$).
